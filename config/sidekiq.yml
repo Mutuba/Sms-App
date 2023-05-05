@@ -1,0 +1,11 @@
+:verbose: false
+:concurrency: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+:timeout: 30
+
+:queues:
+  - default
+# :schedule:
+#   SendSmsWorker:
+#     cron: "* * * * *"
+#     queue: default
+#     enabled: true
