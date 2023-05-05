@@ -17,7 +17,7 @@ ActiveRecord::Schema[7.0].define(version: 20_230_504_093_757) do
   enable_extension 'plpgsql'
 
   create_table 'short_messages', force: :cascade do |t|
-    t.string 'message', default: 'Congratulations, your transaction is successful'
+    t.string 'message', default: 'Congratulations, your transaction is successful.'
     t.datetime 'sent_at'
     t.boolean 'sent', default: false
     t.datetime 'created_at', null: false

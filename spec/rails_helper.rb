@@ -29,9 +29,9 @@ end
 
 RSpec::Sidekiq.configure do |config|
   # Clears all job queues before each example
-  config.clear_all_enqueued_jobs = true 
+  config.clear_all_enqueued_jobs = true
   # Whether to use terminal colours when outputting messages
-  config.enable_terminal_colours = true 
+  config.enable_terminal_colours = true
 end
 
 SidekiqUniqueJobs.configure do |config|
