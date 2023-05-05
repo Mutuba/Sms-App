@@ -14,7 +14,7 @@ class ShortMessagesController < ApplicationController
   def create
     @short_message = ShortMessage.create!(short_message_params)
     sent_out_in = (@short_message.sent_at - Time.now).abs
-    p SendSmsWorker.perform_in(sent_out_in, @short_message.id)
+    SendSmsWorker.perform_in(sent_out_in, @short_message.id)
     json_response(@short_message, :created)
   end
 
