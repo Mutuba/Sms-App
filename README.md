@@ -15,8 +15,13 @@ You can create a mock sms with the following sample payload:
 List of tools used:
 
 `Ruby version 3.0.4
+
 Rails version 7.0.4
+
 Database: PostgreSQL
+
 Backgroud Job Processor: Sidekiq
+
 Backgroud Job message broker: Redis
+
 To avoid Backgroud Job duplications: SidekiqUniqueJobs`
