@@ -2,22 +2,10 @@
 
 An app that schedules a mock sms that later sent out at a time specified by user
 
-Things you may want to cover:
+You can create a mock sms with the following sample payload:
 
-- Ruby version
-
-- System dependencies
-
-- Configuration
-
-- Database creation
-
-- Database initialization
-
-- How to run the test suite
-
-- Services (job queues, cache servers, search engines, etc.)
-
-- Deployment instructions
-
-- ...
+`{
+    "sent_at": "2023-05-05 17:18",
+    "message": "Hi, Daniel"
+}
+`
