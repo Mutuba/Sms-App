@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+# ShortMessagesController
 class ShortMessagesController < ApplicationController
   before_action :set_short_message, only: %i[show update destroy]
 
@@ -11,8 +12,8 @@ class ShortMessagesController < ApplicationController
 
   # POST /short_messages
   def create
-    @short_message = Article.create!(short_message_params)
-    SendSmsWorker.perform_at(15.minutes, ticket_id)
+    @short_message = ShortMessage.create!(short_message_params)
+    SendSmsWorker.perform_in((@short_message.sent_at - Time.now).abs, @short_message.id)
     json_response(@short_message, :created)
   end
 

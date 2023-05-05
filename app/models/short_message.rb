@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
+# ShortMessage
 class ShortMessage < ApplicationRecord
-  # validates :message, presence: true
   validate :send_at_date_cannot_be_in_the_past
 
   def send_at_date_cannot_be_in_the_past

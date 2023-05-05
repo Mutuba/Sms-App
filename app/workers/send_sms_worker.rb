@@ -1,6 +1,8 @@
 # frozen_string_literal: true
 
 require 'sidekiq-scheduler'
+
+# SendSmsWorker
 class SendSmsWorker
   include Sidekiq::Worker
 
