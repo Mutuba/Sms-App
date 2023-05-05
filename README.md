@@ -9,3 +9,5 @@ You can create a mock sms with the following sample payload:
     "message": "Hi, Daniel"
 }
 `
+
+`sent_at` indicates the time the mock will be scheduled to be sent.
