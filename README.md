@@ -1,6 +1,6 @@
 # README
 
-An app that schedules a mock sms that later sent out at a time specified by user
+An app that schedules a mock sms that is later sent out at a time specified by user
 
 You can create a mock sms with the following sample payload:
 
@@ -10,7 +10,7 @@ You can create a mock sms with the following sample payload:
 }
 `
 
-`sent_at` indicates the time the mock will be scheduled to be sent.
+`sent_at` indicates the time the mock sms will be scheduled for sending.
 
 List of tools used:
 
