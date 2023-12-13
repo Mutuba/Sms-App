@@ -39,7 +39,7 @@ class ShortMessagesController < ApplicationController
 
   def short_message_params
     # whitelist params
-    params.permit(:message, :sent_at)
+    params.require(:short_message).permit(:message, :sent_at)
   end
 
   def set_short_message
